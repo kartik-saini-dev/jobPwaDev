@@ -1,0 +1,33 @@
+/* 
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10; 
+  pointer-events: none; 
+} */
+.circle-container {
+  position: fixed; /* Covers the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  pointer-events: none; /* Prevent it from blocking interactions */
+  z-index: 99; /* Ensure it appears on top of all other content */
+  /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: black; /* Circle color */
+  position: fixed; 
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Ignore pointer events */
+  z-index: 999; /* On top of all elements */
+  transition: opacity 0.1s ease; /* Smooth transition for opacity */
+}
